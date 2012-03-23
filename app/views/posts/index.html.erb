@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="title">
+      <%= link_to post.title, post %> 
+    </div>
+    <div class="content">
+      <%= post.content %> 
+    </div>
+  </div>
+<% end %>
