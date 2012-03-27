@@ -1,4 +1,7 @@
 <p><%= f.label "标题" %></p>
-<p><%= f.text_field :title %></p>
+<p><%= f.text_field :title \
+    , :class => "span8" \
+    , :autocomplete => 'off' \
+    , :placeholder => "请输入标题" %></p>
 <p><%= f.label "内容" %></p>
-<p><%= f.text_area :content %></p>
+<p><%= f.text_area :content, :class => "span8" %></p>

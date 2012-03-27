@@ -7,7 +7,11 @@
   <p>
   <%= @post.content %> 
   </p>
-  <p>
-  <%= button_to "编辑文章", edit_post_path(@post), :class => "btn btn-primary", :method => "get" %> <%= button_to "删除文章", post_path(@post), :class => "btn btn-danger", :method => "delete" %>
-  </p>
+  <table class="span8" align="right">
+  	<tr>
+      <td class="span6"></td>
+  		<td><%= button_to "编辑文章", edit_post_path(@post), :class => "btn btn-primary", :method => "get" %></td>
+  		<td><%= button_to "删除文章", post_path(@post), :class => "btn btn-danger", :method => "delete" %></td>
+  	</tr>
+  </table>
 </div>

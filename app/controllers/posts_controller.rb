@@ -18,7 +18,7 @@ class PostsController < ApplicationController
       flash[:success] = "New post success!"
       redirect_to @post
     else
-      render new_post_path(@post)
+      render 'new' 
     end
   end
   def update
