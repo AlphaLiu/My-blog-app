@@ -1,0 +1,12 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+    %a{ :class => "btn btn-navbar"}
+      %span.i-bar
+      %span.i-bar
+      %span.i-bar
+      = link_to "Alpha Talk", root_path, :class => "brand"
+      .container.nav_collapse
+        %ul.nav
+          %li= link_to "首页", root_path
+          %li= link_to "写博客", new_path

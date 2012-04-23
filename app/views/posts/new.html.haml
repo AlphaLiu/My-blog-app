@@ -1,0 +1,7 @@
+.span8
+  %h1
+    发表新文章
+  = form_for @post do |f|
+    = render 'shared/error_messages', :object => f.object
+    = render 'field', :f => f
+    %p= f.submit "发表文章", :class => "btn btn-primary"
