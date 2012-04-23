@@ -1,6 +1,6 @@
 .span8
   %h1= @post.title
-  %h6= @post.created_at.strftime("Posted on %Y-m-%d")
+  %h6 Posted at #{@post.formatted_post_time}
   %p
   %p= simple_format @post.content
   %table{:class => "span8", :align => "right"}
