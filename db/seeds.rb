@@ -20,3 +20,6 @@ Post.create(:title => "Good Day",
              You Know I want to learn rails, so I buy some rails books. Emmm.., 
              I found these books are soso...
            })
+Admin.create(:email => "alpha.liu@me.com",
+            :password => "123456",
+            :password_confirmation => "123456")

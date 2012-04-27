@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
-  before_filter :find_post, :only => ['show', 'edit', 'update', 'destroy']
+  before_filter :find_post, :only => [:show, :edit, :update, :destroy]
+  before_filter :authenticate_admin!, :except => [:index, :show]
+
   def index
     @posts = Post.all.reverse
   end

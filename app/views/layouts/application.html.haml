@@ -24,6 +24,11 @@
     = render "layouts/nav"
     .container
       .content
+        - if notice
+          .alert.alert-error
+            %a.close(data-dismiss="alert")
+              x
+            = notice 
         .row
           .span9
             = yield

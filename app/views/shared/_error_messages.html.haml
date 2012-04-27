@@ -1,8 +1,7 @@
 - if object.errors.any?
   %p
     .alert.alert-error
-      %a.close[data-dismiss="alert"]
+      %a.close(data-dismiss="alert")
         x
       - object.errors.full_messages.each do |msg|
         = msg
-

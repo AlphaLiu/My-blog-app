@@ -9,4 +9,6 @@
       .container.nav_collapse
         %ul.nav
           %li= link_to "首页", root_path
-          %li= link_to "写博客", new_path
+          - if admin_signed_in?
+            %li= link_to "写博客", new_path
+            %li= link_to "注销", destroy_admin_session_path, :method => :delete

@@ -26,6 +26,8 @@ gem 'twitter-bootstrap-rails', :git =>'http://github.com/seyhunak/twitter-bootst
 
 gem 'haml', '~> 3.1.4'
 
+gem 'devise'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

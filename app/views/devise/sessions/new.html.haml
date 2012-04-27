@@ -1,0 +1,9 @@
+%h2 登陆
+= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  %p= f.label :email, "邮件地址:"
+  %p= f.email_field :email
+  
+  %p= f.label :password, "密码:"
+  %p= f.password_field :password
+
+  %p= f.submit "登陆", :class => "btn btn-primary"

@@ -3,9 +3,10 @@
   %h6 Posted at #{@post.formatted_post_time}
   %p
   %p= simple_format @post.content
-  %table{:class => "span8", :align => "right"}
-    %tr
-      %td.span6
-      %td= button_to "编辑文章", edit_post_path(@post), :class => "btn btn-primary", :method => "get"
-      %td= button_to "删除文章", post_path(@post), :class => "btn btn-danger", :method => "delete"
+  - if admin_signed_in?
+    %table{:class => "span8", :align => "right"}
+      %tr
+        %td.span6
+        %td= button_to "编辑文章", edit_post_path(@post), :class => "btn btn-primary", :method => "get"
+        %td= button_to "删除文章", post_path(@post), :class => "btn btn-danger", :method => "delete"
 
